@@ -2,24 +2,21 @@ import React, { Component } from 'react';
 import './App.css';
 import { Fragment } from 'react';
 
-class Table extends Component {
+class List extends Component {
   render() {
     return (
-      <table>
-        <tr>
-          <Columns />
-        </tr>
-      </table>
+      <ul>
+          <ListItems />
+      </ul>
     );
   }
 }
 
-class Columns extends Component {
+class ListItems extends Component {
   render() {
     return (
 			<React.Fragment>
-        <td>Hello</td>
-        <td>World</td>
+        <li>list item</li>
       </React.Fragment>
     );
   }
@@ -30,7 +27,7 @@ class App extends Component {
     return (
 			<div>
 				<h1>React Fragments</h1>
-      	<Table />
+      	<List />
 			</div>
     );
   }
