@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import { Fragment } from 'react';
 
-function ListItem({ num }) {
+function ListItem({ value}) {
   return (
     <Fragment>
-      <li>{num}</li>
+      <li>{value}</li>
     </Fragment>
   );
 }
@@ -14,7 +14,7 @@ function List(props) {
   return (
     <ul>
       {props.numbers.map(num => (
-        <ListItem item={num}  />
+        <ListItem value={num}  />
       ))}
     </ul>
   );
