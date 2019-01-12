@@ -13,20 +13,20 @@ function ListItem({ value}) {
 function List(props) {
   return (
     <ul>
-      {props.numbers.map(num => (
-        <ListItem value={num}  />
+      {props.cats.map(cat => (
+        <ListItem value={cat}  />
       ))}
     </ul>
   );
 }
-const numbers = [1, 2, 3, 4, 5];
+const cats = ["cat 1","cat 2","cat 3","cat 4"];
 
 class App extends Component {
   render() {
     return (
 			<div>
 				<h1>React Fragments</h1>
-      	<List numbers={numbers}/>
+      	<List cats={cats}/>
 			</div>
     );
   }
